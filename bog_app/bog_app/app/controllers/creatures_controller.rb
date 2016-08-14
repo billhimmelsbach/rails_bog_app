@@ -26,6 +26,11 @@ class CreaturesController < ApplicationController
     creature.update_attributes(creature_params)
     redirect_to creature_path(creature)
   end
+  def destroy
+    creature = Creature.find_by_id(params[:id])
+    creature.destroy
+    redirect_to creatures_path
+  end
 
   private
 
