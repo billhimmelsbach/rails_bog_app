@@ -1,7 +1,14 @@
-Creature.drop_all
-Creature.create({
-  name: "Luke", description: "Jedi"})
-Creature.create({name: "Darth Vader", description: "Father of Luke"})
+Creature.destroy_all
+Creature.create([
+  {
+    name: "Swamp Thing",
+    description: "SO SWAMP"
+  },
+  {
+    name: "Swamp Middle Manager",
+    description: "Sure the job sucks, but there's room for growth"
+  }
+])
 
 
 
